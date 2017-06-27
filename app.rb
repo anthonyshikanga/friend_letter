@@ -40,3 +40,7 @@ require('sinatra')
     </body>
     </html>"
   end
+  
+  get('/') do
+     erb(:letter)
+  end
