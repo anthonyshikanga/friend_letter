@@ -1,5 +1,5 @@
 require('sinatra')
-
+require('sinatra/reloader')
   get('/hello') do
     "<!DOCTYPE html>
     <html>
