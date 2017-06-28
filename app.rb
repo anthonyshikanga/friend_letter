@@ -16,3 +16,9 @@ require('sinatra')
    @sender = params.fetch('sender')
    @recipient= params.fetch('recipient')  
   end
+  
+   get('/greeting_card') do
+    @sender = params.fetch('sender')
+    @recipient = params.fetch('recipient')
+    erb(:greeting_card)
+  end
