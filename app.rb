@@ -7,6 +7,8 @@ require('sinatra')
   end
 
   get('/australia') do
+    @sender = "Jane"
+    @recipient = "Jessica"
     erb(:australia)
   end
-
+  
