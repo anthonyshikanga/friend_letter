@@ -12,3 +12,7 @@ require('sinatra')
     erb(:australia)
   end
   
+  get('/greeting_form') do
+   @sender = params.fetch('sender')
+   @recipient= params.fetch('recipient')  
+  end
